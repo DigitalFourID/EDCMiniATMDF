@@ -127,6 +127,10 @@ nav#mainNav a:hover {
   opacity: 0.9;
 }
 
+.menu-toggle {
+  display: none !important;
+}
+
 /* RESPONSIVE HEADER */
 @media (max-width: 480px) {
   .header-container {
@@ -541,9 +545,7 @@ html {
   }
 }
 
-.menu-toggle {
-  display: none !important;
-}
+
 
 
 
