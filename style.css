@@ -498,6 +498,12 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 
 
 
