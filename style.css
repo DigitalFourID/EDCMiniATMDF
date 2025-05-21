@@ -530,6 +530,18 @@ html {
   }
 }
 
+@media screen and (max-width: 300px) {
+  .logo-img {
+    height: 28px;
+  }
+
+  nav#mainNav a {
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+}
+
+
 
 
 
