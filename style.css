@@ -513,13 +513,16 @@ html {
   }
 
   nav#mainNav ul {
-    flex-direction: column;
+    flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
     gap: 8px;
    margin-top: 4px;
   }
 
   nav#mainNav a {
     font-size: 15px;
+    padding: 6px 10px;
   }
 }
 
@@ -545,21 +548,6 @@ html {
   }
 }
 
-@media screen and (max-width: 375px) {
-  .logo-container {
-    flex-direction: column;
-  }
-
-  nav#mainNav ul {
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  nav#mainNav a {
-    font-size: 14px;
-    padding: 4px 8px;
-  }
-}
 
 
 
