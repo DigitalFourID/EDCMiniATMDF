@@ -52,20 +52,20 @@ header {
 .header-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  max-width: 480px;
+  align-items: center;
+  max-width: 100%;
   margin: auto;
-  padding: 12px 16px;
-  gap: 8px;
+  padding: 16px;
+  gap: 12px;
 }
 
 
 .logo-container {
-  justify-content: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
-  width: 100%;
+  flex-wrap: wrap;
 }
 
 .logo-img {
@@ -74,10 +74,9 @@ header {
 
 .logo-container h1 {
   font-size: 18px;
-  text-align: center;
-  width: 100%;
   margin: 0;
-  line-height: 1.2;
+  text-align: center;
+  flex: 1 1 100%;
 }
 
 nav#mainNav {
@@ -96,7 +95,7 @@ nav#mainNav ul {
 }
 
 nav#mainNav ul li {
-  margin-right: 8px;
+  margin-right: 4px 8px;
 }
 
 
@@ -130,9 +129,9 @@ nav#mainNav a:hover {
   }
 
   nav#mainNav ul {
-    justify-content: flex-start;
-    gap: 10px;
-    margin-top: 8px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
   }
 
   .logo-img {
@@ -141,6 +140,7 @@ nav#mainNav a:hover {
 
   .logo-container h1 {
     font-size: 16px;
+    margin-top: 4px;
   }
 }
 
