@@ -541,6 +541,9 @@ html {
   }
 }
 
+.menu-toggle {
+  display: none !important;
+}
 
 
 
