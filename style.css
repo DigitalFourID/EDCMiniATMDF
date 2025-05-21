@@ -69,23 +69,27 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+ flex-wrap: wrap;
+  gap: 8px;
   width: 100%;
+ text-align: center;
 }
 
 
 .logo-img {
-  height: 48px;
+  height: 44px;
 }
 
 .logo-container h1 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 200px;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  flex: 1 1 auto;
 }
+
 
 
 nav#mainNav {
@@ -97,13 +101,14 @@ nav#mainNav ul {
   flex-wrap: wrap;
   gap: 12px;
   padding: 0;
-  margin: 0;
+  margin: 8px 0 0;
   list-style: none;
   justify-content: center;
   }
 
 nav#mainNav ul li {
-   margin: 4px 8px;
+ flex: 1 1 auto;
+  text-align: center;
 }
 
 
@@ -113,6 +118,8 @@ nav#mainNav a {
   font-weight: bold;
   font-size: 14px;
   transition: 0.2s;
+   display: block;
+  padding: 6px 12px;
 }
 
 nav#mainNav a:hover {
@@ -144,6 +151,7 @@ nav#mainNav a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+   margin-bottom: 6px;
   }
  
   .logo-container h1 {
@@ -490,6 +498,39 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+@media screen and (max-width: 400px) {
+  .logo-container {
+    flex-direction: column;
+  }
+
+  .logo-img {
+    height: 36px;
+  }
+
+  nav#mainNav ul {
+    flex-direction: column;
+    gap: 8px;
+   margin-top: 4px;
+  }
+
+  nav#mainNav a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo-img {
+    height: 32px;
+  }
+
+  nav#mainNav a {
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+}
+
+
 
 
 
